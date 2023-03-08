@@ -11,6 +11,12 @@
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>   为了方便使用Hexo命令，在这里做一下记录。</p><h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令:"></a>常用指令:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo n <span class="hljs-string">&#x27;fileName&#x27;</span> <span class="hljs-comment">#生成一个新文件。也可写作 hexo new &#x27;fileName&#x27;或hexo new post &#x27;fileName&#x27;</span><br>hexo g <span class="hljs-comment">#生成静态文件。也可写作 hexo generate</span><br>hexo s <span class="hljs-comment">#启动本地服务器。也可写作 hexo server，ctrl+c 结束，默认地址为：http://localhost:4000/</span><br>hexo d <span class="hljs-comment">#部署发布至网站。也可写作 hexo deploy</span><br>hexo g -d <span class="hljs-comment">#生成静态文件并部署。</span><br>hexo clean <span class="hljs-comment">#清除生成的静态文件，也就是清缓存。这个命令没有简写**</span><br></code></pre></td></tr></table></figure><h2 id="指令说明"><a href="#指令说明" class="headerlink" title="指令说明:"></a>指令说明:</h2><p><code>hexo server</code>        #Hexo 会监视文件变动并自动更新，除修改<strong>站点配置文件</strong>外,无须重启服务器,直接刷新网页即可生效。<br> <code>hexo server -s</code> #以静态模式启动<br> <code>hexo server -p 5000</code> #更改访问端口   (默认端口为4000，’ctrl + c’关闭server)<br> <code>hexo server -i IP地址</code> #自定义 IP<br> <code>hexo clean</code> #清除缓存  ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹<br> <code>hexo g</code> #生成静态网页  (执行 <code>$ hexo g</code>后会在站点根目录下生成public文件夹, hexo会将”/blog/source/“   下面的.md后缀的文件编译为.html后缀的文件,存放在”/blog/public/ “   路径下)<br> <code>hexo d</code> #将本地数据部署到远端服务器(如github)<br> <code>hexo init 文件夹名称</code> #初始化XX文件夹名称<br> <code>npm update hexo -g</code>#升级<br> <code>npm install hexo -g</code>#安装<br> <code>node-v</code>          #查看node.js版本号<br> <code>npm -v</code>        #查看npm版本号<br> <code>git --version</code>  #查看git版本号<br> <code>hexo -v</code>      #查看hexo版本号</p><p><code>hexo publish [layout] &lt;title&gt;</code>   #通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹,如:<code>$ hexo publish [layout] &lt;title&gt;</code>,草稿默认是不会显示在页面中的，可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code>来预览草稿。</p>]]></content>
     
     
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -29,6 +35,12 @@
     
     <content type="html"><![CDATA[<p>​    逛github看到很多g友都有自己的个人博客，做的很好，产生了参考别人的教程搞一个的想法。本着免费+试用的原则，首先找到了GitHub Pages+Jekyll的教程，动手开始搭建。在选择jekyll主题的时候教程说的不是很详细，导致改了不少配置项没生效，试了很久也没成功。</p><p>​        继续探索发现不少GitHub+Hexo的教程。对比了一下Hexo和jekyll的主题，感觉Hexo更炫酷一点，继续尝试。</p><p>​        参考了<a href="https://www.zhihu.com/people/crystal">crystal</a>在知乎上写的一篇 <a href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程（小白向）</a>教程，写的很详细。跟着教程操作一次成功。虽然整体下来难度不大，但还是比较折腾的。记录一下，作为个人博客的第一篇。</p><p>​    </p>]]></content>
     
+    
+    <categories>
+      
+      <category>搭建博客</category>
+      
+    </categories>
     
     
     <tags>
