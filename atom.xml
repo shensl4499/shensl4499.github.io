@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>waneruc920</title>
   
+  <subtitle>waner</subtitle>
+  <link href="http://www.uc920.top/atom.xml" rel="self"/>
   
+  <link href="http://www.uc920.top/"/>
+  <updated>2023-03-11T04:28:33.863Z</updated>
+  <id>http://www.uc920.top/</id>
+  
+  <author>
+    <name>waner</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>running_page汇总</title>
-    <link href="/2023/03/09/running_page%E6%B1%87%E6%80%BB/"/>
-    <url>/2023/03/09/running_page%E6%B1%87%E6%80%BB/</url>
+    <link href="http://www.uc920.top/2023/03/09/running_page%E6%B1%87%E6%80%BB/"/>
+    <id>http://www.uc920.top/2023/03/09/running_page%E6%B1%87%E6%80%BB/</id>
+    <published>2023-03-09T13:44:00.000Z</published>
+    <updated>2023-03-11T04:28:33.863Z</updated>
     
     <content type="html"><![CDATA[<H1><center>running_page 汇总</center></H1><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>​        一年前在GitHub上看到yihong大佬分享的running_page前端开源项目，<strong>页面非常炫酷</strong>。之前把项目拉取下来在本地运行，按照操作步骤也生成了自己的跑步数据。后来由于疏于跑步就没有坚持同步。今天从头开始系统性的把这个项目学习了一番，写这篇文章用于记录自己折腾的过程，为希望以此项目搭建自己的炫酷跑步平台的小伙伴写个详细的教程，也加深一下自己对此项目的理解。</p><ul><li>项目地址：<a href="https://github.com/yihong0618/running_page">running_page</a></li><li>项目作者：<a href="https://github.com/yihong0618">yihong</a></li><li>我的跑步展示：<a href="https://www.waner.run/">随风飞翔</a></li></ul><p>目前（2023.3.10）支持的来源有</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash">Strava<br>Nike Run Club<br>Garmin<br>Garmin-cn<br>Keep<br>悦跑圈<br>咕咚<br>郁金香运动<br>GPX<br>TCX<br>Tcx+Strava(upload all tcx data to strava)<br>Gpx+Strava(upload all tcx data to strava)<br>Nike+Strava(Using NRC Run, Strava backup data)<br>Garmin_to_Strava(Using Garmin Run, Strava backup data)<br>Strava_to_Garmin(Using Strava Run, Garmin backup data)<br></code></pre></td></tr></table></figure><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>1.该项目使用Python语言开发，运行之前需要安装Python。<a href="https://zhuanlan.zhihu.com/p/111168324">安装python教程点此处查看</a></p><p>2.从GitHub上拉取推送项目，需要使用Git。<a href="https://zhuanlan.zhihu.com/p/443527549">安装Git教程点此处查看</a></p><p>3.编辑器建议使用VSCode，支持各种类型文件语法高亮，改代码比较方便直观。<a href="https://cloud.tencent.com/developer/article/2119156">安装VSCode教程点此处查看</a></p><h3 id="项目拉取"><a href="#项目拉取" class="headerlink" title="项目拉取"></a>项目拉取</h3><p>​    作者README设置的默认是英文，阅读有障碍的话可以切换为简体中文，阅读该项目的说明书后开始拉取。建议将资源库Fork到自己的空间里，这样以后可以自定义一些页面后，上传到自己的GitHub账号上，再配合GitHub Actions实现自动化部署。</p><h3 id="项目Demo运行"><a href="#项目Demo运行" class="headerlink" title="项目Demo运行"></a>项目Demo运行</h3><h3 id="作者数据删减"><a href="#作者数据删减" class="headerlink" title="作者数据删减"></a>作者数据删减</h3><h3 id="生成本人数据"><a href="#生成本人数据" class="headerlink" title="生成本人数据"></a>生成本人数据</h3><h3 id="项目本地运行"><a href="#项目本地运行" class="headerlink" title="项目本地运行"></a>项目本地运行</h3><h3 id="利用GitHub-Actions调用Vercel部署"><a href="#利用GitHub-Actions调用Vercel部署" class="headerlink" title="利用GitHub Actions调用Vercel部署"></a>利用GitHub Actions调用Vercel部署</h3><h3 id="个人域名购买"><a href="#个人域名购买" class="headerlink" title="个人域名购买"></a>个人域名购买</h3><h3 id="Vercel绑定域名"><a href="#Vercel绑定域名" class="headerlink" title="Vercel绑定域名"></a>Vercel绑定域名</h3>]]></content>
     
     
-    <categories>
-      
-      <category>跑步</category>
-      
-      <category>教程</category>
-      
-    </categories>
+    <summary type="html">跑步数据展示平台的搭建与部署</summary>
     
     
-    <tags>
-      
-      <tag>跑步</tag>
-      
-    </tags>
+    
+    <category term="跑步" scheme="http://www.uc920.top/categories/%E8%B7%91%E6%AD%A5/"/>
+    
+    <category term="教程" scheme="http://www.uc920.top/categories/%E8%B7%91%E6%AD%A5/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="跑步" scheme="http://www.uc920.top/tags/%E8%B7%91%E6%AD%A5/"/>
     
   </entry>
   
-  
-  
   <entry>
     <title>Hexo 指令</title>
-    <link href="/2023/03/08/Hexo-%E6%8C%87%E4%BB%A4/"/>
-    <url>/2023/03/08/Hexo-%E6%8C%87%E4%BB%A4/</url>
+    <link href="http://www.uc920.top/2023/03/08/Hexo-%E6%8C%87%E4%BB%A4/"/>
+    <id>http://www.uc920.top/2023/03/08/Hexo-%E6%8C%87%E4%BB%A4/</id>
+    <published>2023-03-08T13:45:08.000Z</published>
+    <updated>2023-03-11T03:19:10.324Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h2><p>   为了方便使用Hexo命令，在这里做一下记录。</p><h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令:"></a>常用指令:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo n <span class="hljs-string">&#x27;fileName&#x27;</span> <span class="hljs-comment">#生成一个新文件。也可写作 hexo new &#x27;fileName&#x27;或hexo new post &#x27;fileName&#x27;</span><br>hexo g <span class="hljs-comment">#生成静态文件。也可写作 hexo generate</span><br>hexo s <span class="hljs-comment">#启动本地服务器。也可写作 hexo server，ctrl+c 结束，默认地址为：http://localhost:4000/</span><br>hexo d <span class="hljs-comment">#部署发布至网站。也可写作 hexo deploy</span><br>hexo g -d <span class="hljs-comment">#生成静态文件并部署。</span><br>hexo clean <span class="hljs-comment">#清除生成的静态文件，也就是清缓存。这个命令没有简写**</span><br></code></pre></td></tr></table></figure><h2 id="指令说明"><a href="#指令说明" class="headerlink" title="指令说明:"></a>指令说明:</h2><p><code>hexo server</code>        #Hexo 会监视文件变动并自动更新，除修改<strong>站点配置文件</strong>外,无须重启服务器,直接刷新网页即可生效。<br> <code>hexo server -s</code> #以静态模式启动<br> <code>hexo server -p 5000</code> #更改访问端口   (默认端口为4000，’ctrl + c’关闭server)<br> <code>hexo server -i IP地址</code> #自定义 IP<br> <code>hexo clean</code> #清除缓存  ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹<br> <code>hexo g</code> #生成静态网页  (执行 <code>$ hexo g</code>后会在站点根目录下生成public文件夹, hexo会将”/blog/source/“   下面的.md后缀的文件编译为.html后缀的文件,存放在”/blog/public/ “   路径下)<br> <code>hexo d</code> #将本地数据部署到远端服务器(如github)<br> <code>hexo init 文件夹名称</code> #初始化XX文件夹名称<br> <code>npm update hexo -g</code>#升级<br> <code>npm install hexo -g</code>#安装<br> <code>node-v</code>          #查看node.js版本号<br> <code>npm -v</code>        #查看npm版本号<br> <code>git --version</code>  #查看git版本号<br> <code>hexo -v</code>      #查看hexo版本号</p><p><code>hexo publish [layout] &lt;title&gt;</code>   #通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹,如:<code>$ hexo publish [layout] &lt;title&gt;</code>,草稿默认是不会显示在页面中的，可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code>来预览草稿。</p>]]></content>
     
     
-    <categories>
-      
-      <category>Hexo</category>
-      
-    </categories>
+    <summary type="html">Hexo的常用指令</summary>
     
     
-    <tags>
-      
-      <tag>Hexo</tag>
-      
-    </tags>
+    
+    <category term="Hexo" scheme="http://www.uc920.top/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="http://www.uc920.top/tags/Hexo/"/>
     
   </entry>
   
-  
-  
   <entry>
     <title>搭建博客记录</title>
-    <link href="/2023/03/08/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"/>
-    <url>/2023/03/08/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/</url>
+    <link href="http://www.uc920.top/2023/03/08/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"/>
+    <id>http://www.uc920.top/2023/03/08/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/</id>
+    <published>2023-03-08T13:44:57.000Z</published>
+    <updated>2023-03-11T03:19:57.312Z</updated>
     
     <content type="html"><![CDATA[<p>​    逛github看到很多g友都有自己的个人博客，做的很好，产生了参考别人的教程搞一个的想法。本着免费+试用的原则，首先找到了GitHub Pages+Jekyll的教程，动手开始搭建。在选择jekyll主题的时候教程说的不是很详细，导致改了不少配置项没生效，试了很久也没成功。</p><p>​        继续探索发现不少GitHub+Hexo的教程。对比了一下Hexo和jekyll的主题，感觉Hexo更炫酷一点，继续尝试。</p><p>​        参考了<a href="https://www.zhihu.com/people/crystal">crystal</a>在知乎上写的一篇 <a href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程（小白向）</a>教程，写的很详细。跟着教程操作一次成功。虽然整体下来难度不大，但还是比较折腾的。记录一下，作为个人博客的第一篇。</p><p>​    </p>]]></content>
     
     
-    <categories>
-      
-      <category>搭建博客</category>
-      
-    </categories>
+    <summary type="html">搭建博客的历程</summary>
     
     
-    <tags>
-      
-      <tag>搭建博客</tag>
-      
-    </tags>
+    
+    <category term="搭建博客" scheme="http://www.uc920.top/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="搭建博客" scheme="http://www.uc920.top/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
-  
-  
-  
-</search>
+</feed>
