@@ -6,7 +6,7 @@
   <link href="http://www.uc920.top/atom.xml" rel="self"/>
   
   <link href="http://www.uc920.top/"/>
-  <updated>2023-03-11T04:28:33.863Z</updated>
+  <updated>2023-03-11T07:21:27.177Z</updated>
   <id>http://www.uc920.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown语法备忘录</title>
+    <link href="http://www.uc920.top/2023/03/11/Markdown%E8%AF%AD%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>http://www.uc920.top/2023/03/11/Markdown%E8%AF%AD%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+    <published>2023-03-11T07:08:05.000Z</published>
+    <updated>2023-03-11T07:21:27.177Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="折叠展开"><a href="#折叠展开" class="headerlink" title="折叠展开"></a>折叠展开</h2><p>折叠展开用到了2个标签。<code>details</code> 和 <code>summary</code>。使用这2个标签就默认是html预言了。里面的内容只能是html代码。</p><p>举例：</p><p>这里是源代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">&lt;details&gt;<br>    &lt;summary&gt;<br>        点击这里查看剩余内容<br>    &lt;/summary&gt;<br>    &lt;span style=<span class="hljs-string">&#x27;text-indent:30px&#x27;</span>&gt;两个黄鹂鸣翠柳，一行白鹭上青天。&lt;/span&gt;<br>&lt;/details&gt;<br></code></pre></td></tr></table></figure><p>效果如下：</p><details>    <summary>        点击这里查看剩余内容    </summary>    ------两个黄鹂鸣翠柳，一行白鹭上青天。</details>]]></content>
+    
+    
+    <summary type="html">Markdown标签用法</summary>
+    
+    
+    
+    
+    <category term="Markdown语法" scheme="http://www.uc920.top/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>running_page汇总</title>
     <link href="http://www.uc920.top/2023/03/09/running_page%E6%B1%87%E6%80%BB/"/>
     <id>http://www.uc920.top/2023/03/09/running_page%E6%B1%87%E6%80%BB/</id>
     <published>2023-03-09T13:44:00.000Z</published>
-    <updated>2023-03-11T04:28:33.863Z</updated>
+    <updated>2023-03-11T07:10:40.252Z</updated>
     
     <content type="html"><![CDATA[<H1><center>running_page 汇总</center></H1><h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>​        一年前在GitHub上看到yihong大佬分享的running_page前端开源项目，<strong>页面非常炫酷</strong>。之前把项目拉取下来在本地运行，按照操作步骤也生成了自己的跑步数据。后来由于疏于跑步就没有坚持同步。今天从头开始系统性的把这个项目学习了一番，写这篇文章用于记录自己折腾的过程，为希望以此项目搭建自己的炫酷跑步平台的小伙伴写个详细的教程，也加深一下自己对此项目的理解。</p><ul><li>项目地址：<a href="https://github.com/yihong0618/running_page">running_page</a></li><li>项目作者：<a href="https://github.com/yihong0618">yihong</a></li><li>我的跑步展示：<a href="https://www.waner.run/">随风飞翔</a></li></ul><p>目前（2023.3.10）支持的来源有</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash">Strava<br>Nike Run Club<br>Garmin<br>Garmin-cn<br>Keep<br>悦跑圈<br>咕咚<br>郁金香运动<br>GPX<br>TCX<br>Tcx+Strava(upload all tcx data to strava)<br>Gpx+Strava(upload all tcx data to strava)<br>Nike+Strava(Using NRC Run, Strava backup data)<br>Garmin_to_Strava(Using Garmin Run, Strava backup data)<br>Strava_to_Garmin(Using Strava Run, Garmin backup data)<br></code></pre></td></tr></table></figure><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>1.该项目使用Python语言开发，运行之前需要安装Python。<a href="https://zhuanlan.zhihu.com/p/111168324">安装python教程点此处查看</a></p><p>2.从GitHub上拉取推送项目，需要使用Git。<a href="https://zhuanlan.zhihu.com/p/443527549">安装Git教程点此处查看</a></p><p>3.编辑器建议使用VSCode，支持各种类型文件语法高亮，改代码比较方便直观。<a href="https://cloud.tencent.com/developer/article/2119156">安装VSCode教程点此处查看</a></p><h3 id="项目拉取"><a href="#项目拉取" class="headerlink" title="项目拉取"></a>项目拉取</h3><p>​    作者README设置的默认是英文，阅读有障碍的话可以切换为简体中文，阅读该项目的说明书后开始拉取。建议将资源库Fork到自己的空间里，这样以后可以自定义一些页面后，上传到自己的GitHub账号上，再配合GitHub Actions实现自动化部署。</p><h3 id="项目Demo运行"><a href="#项目Demo运行" class="headerlink" title="项目Demo运行"></a>项目Demo运行</h3><h3 id="作者数据删减"><a href="#作者数据删减" class="headerlink" title="作者数据删减"></a>作者数据删减</h3><h3 id="生成本人数据"><a href="#生成本人数据" class="headerlink" title="生成本人数据"></a>生成本人数据</h3><h3 id="项目本地运行"><a href="#项目本地运行" class="headerlink" title="项目本地运行"></a>项目本地运行</h3><h3 id="利用GitHub-Actions调用Vercel部署"><a href="#利用GitHub-Actions调用Vercel部署" class="headerlink" title="利用GitHub Actions调用Vercel部署"></a>利用GitHub Actions调用Vercel部署</h3><h3 id="个人域名购买"><a href="#个人域名购买" class="headerlink" title="个人域名购买"></a>个人域名购买</h3><h3 id="Vercel绑定域名"><a href="#Vercel绑定域名" class="headerlink" title="Vercel绑定域名"></a>Vercel绑定域名</h3>]]></content>
     
@@ -30,9 +49,7 @@
     
     
     
-    <category term="跑步" scheme="http://www.uc920.top/categories/%E8%B7%91%E6%AD%A5/"/>
-    
-    <category term="教程" scheme="http://www.uc920.top/categories/%E8%B7%91%E6%AD%A5/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="http://www.uc920.top/categories/%E6%95%99%E7%A8%8B/"/>
     
     
     <category term="跑步" scheme="http://www.uc920.top/tags/%E8%B7%91%E6%AD%A5/"/>
